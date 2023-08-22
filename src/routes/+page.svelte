@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import { useCompletion } from 'ai/svelte';
+ 
+  const { input, handleSubmit, completion } = useCompletion({
+    api: '/api/completion',
+  });
+</script>
+ 
+<main>
+  <form on:submit={handleSubmit}>
+    <input type="text" bind:value={$input} placeholder="Describe your business..." />
+    <button type="submit">Generate Slogan</button>
+  </form>
+  <p>{$completion}</p>
+</main>
