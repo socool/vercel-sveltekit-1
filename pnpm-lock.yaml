@@ -16,6 +16,9 @@ dependencies:
     version: 4.0.0
 
 devDependencies:
+  '@fontsource/fira-mono':
+    specifier: ^4.5.10
+    version: 4.5.10
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
     version: 2.1.0(@sveltejs/kit@1.22.6)
@@ -271,6 +274,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/fira-mono@4.5.10:
+    resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
+    dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
